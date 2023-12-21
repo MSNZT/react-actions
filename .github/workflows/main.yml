@@ -1,0 +1,13 @@
+name: First actions
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    uses:
+    steps:
+      - name: get repository code
+      - uses: actions/checkout@v4
+      - name: install modules
+      - run: yarn install
+      - name: test react app
+      - run: yarn test
