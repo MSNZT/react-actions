@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get repository code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: install modules
-      - run: yarn install
+        run: yarn install
       - name: test react app
-      - run: yarn test
+        run: yarn test
